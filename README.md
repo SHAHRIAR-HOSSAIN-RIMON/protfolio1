@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# World-Class Portfolio Website
 
-## Getting Started
+A stunning, professionally animated portfolio website showcasing exceptional frontend skills through sophisticated 3D animations, smooth interactions, and modern design principles.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
+- **Immersive 3D Graphics**: Three.js particle systems and animated 3D objects
+- **Smooth Animations**: Framer Motion and GSAP for butter-smooth transitions
+- **Smooth Scrolling**: Lenis for silky-smooth scroll experience
+- **Modern Design**: Dark theme with Tech Blue accents and glassmorphism
+- **Fully Responsive**: Mobile-first approach, perfect on all devices
+- **SEO Optimized**: Meta tags, semantic HTML, and Next.js optimization
+- **Performance**: Lazy loading, code splitting, and optimized assets
+
+## 🛠️ Tech Stack
+
+### Core
+- **Framework**: Next.js 16 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: shadcn/ui
+
+### 3D & Animations
+- **3D Graphics**: React Three Fiber + Drei
+- **Animations**: Framer Motion + GSAP
+- **Smooth Scroll**: Lenis
+
+### Additional
+- **State Management**: Zustand
+- **Forms**: React Hook Form
+- **Icons**: Lucide React
+- **Fonts**: Space Grotesk + Inter (Google Fonts)
+
+## 📦 Installation
+
+1. Clone the repository:
+\`\`\`bash
+git clone <your-repo-url>
+cd portfolio
+\`\`\`
+
+2. Install dependencies:
+\`\`\`bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+\`\`\`
+
+3. Run the development server:
+\`\`\`bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Color Palette
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Background**: Carbon Black (#0A0A0A, #1B1B1B)
+- **Primary**: Tech Blue (#1560BD)
+- **Accent**: Dark Cyan (#008B8B)
+- **Secondary**: Dark Slate Grey (#2F4F4F)
+- **Text**: Light Grey (#F5F5F5)
 
-## Learn More
+## 📝 Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Personal Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Update the following placeholders in the codebase:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Hero Section** (`components/sections/hero.tsx`):
+   - Your name
+   - Professional title
+   - Bio text
+   - Social media links
 
-## Deploy on Vercel
+2. **About Section** (`components/sections/about.tsx`):
+   - Profile photo
+   - Bio paragraphs
+   - Skills list
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Projects** (`components/sections/projects.tsx`):
+   - Project details
+   - Images
+   - Demo and GitHub links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Competitive Programming** (`components/sections/competitive-programming.tsx`):
+   - Platform ratings
+   - Profile links
+   - Achievements
+
+5. **Certifications** (`components/sections/certifications.tsx`):
+   - Certification details
+   - Awards
+
+6. **Contact** (`components/sections/contact.tsx`):
+   - Email address
+   - Phone number
+   - Location
+
+7. **Footer** (`components/footer.tsx`):
+   - Social media links
+   - Copyright information
+
+### Theme Colors
+
+Edit `app/globals.css` to customize the color scheme:
+- Modify CSS variables in `:root` and `.dark` sections
+- Update gradient colors in the `@layer components` section
+
+### Fonts
+
+To change fonts, edit `app/layout.tsx`:
+1. Import different Google Fonts
+2. Update the font variables
+3. Update CSS variables in `app/globals.css`
+
+## 🚢 Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import your repository to [Vercel](https://vercel.com)
+3. Vercel will auto-detect Next.js and deploy
+
+### Other Platforms
+
+Build the production version:
+\`\`\`bash
+npm run build
+npm run start
+\`\`\`
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- Design inspiration from modern portfolio websites
+- shadcn/ui for beautiful component library
+- Three.js community for 3D graphics examples
+- Font pairings from Kombai Font API
+- Color palette from Kombai Color API
+
+## 📧 Contact
+
+For questions or feedback, please reach out:
+- Email: your.email@example.com
+- LinkedIn: [Your LinkedIn](https://linkedin.com)
+- GitHub: [Your GitHub](https://github.com)
+
+---
+
+Made with ❤️ using Next.js, React, and TypeScript
